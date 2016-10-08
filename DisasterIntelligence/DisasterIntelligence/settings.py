@@ -24,10 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9be05143-a016-41c1-bde3-02566a2e17f8'
+SECRET_KEY = os.environ.get('Django_Secret', '9be05143-a016-41c1-bde3-02566a2e17f8')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(int(os.environ.get('Django_Debug', '1')))
 
 ALLOWED_HOSTS = []
 
@@ -79,12 +79,26 @@ WSGI_APPLICATION = 'DisasterIntelligence.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+env_db = os.environ.get('Django_DbEngine', 'sqlite')
+
+db_configs = {
+    'sqlite': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+    },
+
+    'mysql': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get('Django_DbName'),
+        'USER': os.environ.get('Django_DbUser'),
+        'PASSWORD': os.environ.get('Django_DbPassword'),
+        'HOST': os.environ.get('Django_DbHost'),
+        'PORT': os.environ.get('Django_DbPort', '3306')
+    }
+}
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': db_configs[env_db]
 }
 
 
