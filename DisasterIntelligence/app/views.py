@@ -1,11 +1,19 @@
 """
 Definition of views.
 """
+import urllib.request
+import xml.etree.ElementTree
 
 from django.shortcuts import render
 from django.http import HttpRequest
-from django.template import RequestContext
 from datetime import datetime
+from django_ajax.decorators import ajax
+from collections import defaultdict
+
+from django.views.decorators.csrf import csrf_exempt
+
+seismic_feed_api = 'http://data.tmd.go.th/api/DailySeismicEvent/v1/?uid=api&ukey=api12345'
+
 
 def home(request):
     """Renders the home page."""
@@ -14,33 +22,34 @@ def home(request):
         request,
         'app/index.html',
         {
-            'title':'Home Page',
-            'year':datetime.now().year,
+            'title': 'Home Page',
+            'year': datetime.now().year,
         }
     )
 
-def contact(request):
-    """Renders the contact page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/contact.html',
-        {
-            'title':'Contact',
-            'message':'Your contact page.',
-            'year':datetime.now().year,
-        }
-    )
 
-def about(request):
-    """Renders the about page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/about.html',
-        {
-            'title':'About',
-            'message':'Your application description page.',
-            'year':datetime.now().year,
-        }
-    )
+@ajax
+@csrf_exempt
+def get_lat_lon(request):
+    f = urllib.request.urlopen(seismic_feed_api).read()
+    root = xml.etree.ElementTree.fromstring(f)
+    return {'result': True, 'conv': conv(root)}
+
+
+def conv(xmlroot):
+    r = []
+    z_index = 0
+    for i in xmlroot:
+        if i.tag == 'DailyEarthquakes':
+            e = [None, None, None, None]
+            for j in i:
+                if j.tag == 'OriginEnglish':
+                    e[0] = j.text
+                elif j.tag == 'Latitude':
+                    e[1] = j.text
+                elif j.tag == 'Longitude':
+                    e[2] = j.text
+            e[3] = z_index
+            z_index += 1
+            r.insert(len(r), e)
+    return r

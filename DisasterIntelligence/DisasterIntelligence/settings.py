@@ -9,11 +9,14 @@ https://docs.djangoproject.com/en/1.9/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
+import django
 
 import os
 import posixpath
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.conf import global_settings
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
