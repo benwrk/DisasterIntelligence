@@ -1,5 +1,6 @@
-django >=1.9, <2
 ajax==3.0.0
 decorator==4.0.10
-django-appconf==1.0.2
+Django==1.10.2
 djangoajax==2.3.6
+django-appconf==1.0.2
+whitenoise==3.2.2
