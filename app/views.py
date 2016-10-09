@@ -76,7 +76,7 @@ def conv(xmlroot, distance, lat, log):
 @csrf_exempt
 def fake_conv(request):
     r = []
-    e = ['Bangkok', '13.813590', '99.959996', '0', '6', '4.5', 'กรุงเทพ', '2016-10-9']
+    e = ['Bangkok', '13.813590', '99.959996', '0', '6', '4.5', 'กรุงเทพ', '2016-10-9 9.00']
     r.insert(len(r), e)
     print('======================================')
     return {'result': True, 'conv': r}
