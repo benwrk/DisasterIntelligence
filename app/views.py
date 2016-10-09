@@ -72,6 +72,16 @@ def conv(xmlroot, distance, lat, log):
     return r
 
 
+@ajax
+@csrf_exempt
+def fake_conv(request):
+    r = []
+    e = ['Bangkok', '13.813590', '99.959996', '0', '6', '4.5', 'กรุงเทพ', '2016-10-9']
+    r.insert(len(r), e)
+    print('======================================')
+    return {'result': True, 'conv': r}
+
+
 def calculate_distance(tlat1, tlon1, tlat2, tlon2):
     R = 6373.0
 

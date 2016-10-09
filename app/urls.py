@@ -16,4 +16,5 @@ urlpatterns = [
     # Examples:
     url(r'^$', views.home, name='home'),
     url(r'^get_lat_lon/$', views.get_lat_lon, name='get_lat_lon'),
+    url(r'^fake_conv/$', views.fake_conv, name='fake_conv'),
 ]

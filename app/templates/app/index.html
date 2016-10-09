@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Disaster Intelligence</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'app/content/bootstrap.min.css' %}" rel="stylesheet">
@@ -40,7 +40,7 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+            <a href="#top" onclick=$("#menu-close").click();>Disaster Intelligence</a>
         </li>
         <li>
             <a href="#top" onclick=$("#menu-close").click();>Home</a>
@@ -52,10 +52,10 @@
             <a href="#services" onclick=$("#menu-close").click();>Services</a>
         </li>
         <li>
-            <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            <a href="#portfolio" onclick=$("#menu-close").click();>Guidance / Prediction</a>
         </li>
         <li>
-            <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            <a href="#contact" onclick=$("#menu-close").click();>Nearby Earthquake</a>
         </li>
     </ul>
 </nav>
@@ -136,10 +136,10 @@
                                 <i class="fa fa-compass fa-stack-1x text-primary"></i>
                             </span>
                             <h4>
-                                <strong>Near by earthquake</strong>
+                                <strong>Nearby earthquake</strong>
                             </h4>
                             <p>See near by earthquake</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <a href="#map" class="btn btn-light">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -152,7 +152,7 @@
                                 <strong>Deal with</strong>
                             </h4>
                             <p>How to deal with the earthquake.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <a href="#deal-with" class="btn btn-light">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -166,51 +166,49 @@
 </section>
 
 <!-- Callout -->
-<aside class="callout">
-    <div class="text-vertical-center">
-        <h1>Vertically Centered Text</h1>
-    </div>
-</aside>
+{#<aside class="callout">#}
+{#    <div class="text-vertical-center">#}
+{#        <h1>Vertically Centered Text</h1>#}
+{#    </div>#}
+{#</aside>#}
 
 <!-- Portfolio -->
 <section id="portfolio" class="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h2>Predictions</h2>
+                <h2>Guidance / Predictions</h2>
                 <hr class="small">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="portfolio-item">
                             <a href="http://52.163.231.25:1919/home">
-                                <img class="img-portfolio img-responsive" src="{% static 'app/img/portfolio-1.jpg' %}">
+                                <img class="img-portfolio img-responsive" src="{% static 'app/img/Group1.png' %}">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="portfolio-item">
                             <a href="http://52.163.231.25:1919/In1">
-                                <img class="img-portfolio img-responsive" src="{% static 'app/img/portfolio-2.jpg' %}">
+                                <img class="img-portfolio img-responsive" src="{% static 'app/img/Group2.png' %}">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="portfolio-item">
                             <a href="http://52.163.231.25:1919/calendar">
-                                <img class="img-portfolio img-responsive" src="{% static 'app/img/portfolio-3.jpg' %}">
+                                <img class="img-portfolio img-responsive" src="{% static 'app/img/Group3.png' %}">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="portfolio-item">
                             <a href="http://52.163.231.25:1919/Vir">
-                                <img class="img-portfolio img-responsive" src="{% static 'app/img/portfolio-4.jpg' %}">
+                                <img class="img-portfolio img-responsive" src="{% static 'app/img/Group4.png' %}">
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- /.row (nested) -->
-                <a href="#" class="btn btn-dark">View More Items</a>
             </div>
             <!-- /.col-lg-10 -->
         </div>
@@ -220,32 +218,32 @@
 </section>
 
 <!-- Call to Action -->
-<aside class="call-to-action bg-primary">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h3>The buttons below are impossible to resist.</h3>
-                <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-            </div>
-        </div>
-    </div>
-</aside>
+{#<aside class="call-to-action bg-primary">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-lg-12 text-center">#}
+{#                <h3>The buttons below are impossible to resist.</h3>#}
+{#                <a href="#" class="btn btn-lg btn-light">Click Me!</a>#}
+{#                <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</aside>#}
 
 <!-- Map -->
-<section id="contact" class="map">
+<section id="contact" class="map" style="border-top: 1px solid black;">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h2>Near by earthquake</h2>
+                <h2>Nearby earthquake</h2>
                 <hr class="small">
             </div>
         </div>
     </div>
     {#    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">#}
-    <div id="map" class="col-md-6 col-xs-12"></div>
+    <div id="map" class="col-md-6 col-xs-12" style="po"></div>
     <div class="col-md-6 col-xs-12">
-        <div class="form-group">
+        <div class="form-group" class="col-md-6" style="width: 50%">
             <label for="sel1">Radius:</label>
             <select class="form-control" id="sel1">
                 <option value="50">50km</option>
@@ -256,6 +254,63 @@
                 <option value="1000">1000km</option>
             </select>
         </div>
+        <div class="feed-text">
+            <!-- start feedwind code -->
+            <script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script>
+            <script type="text/javascript">(function () {
+                var params = {
+                    rssmikle_url: "http://www.seismology.tmd.go.th/feed/rss_inside.xml",
+                    rssmikle_frame_width: "400",
+                    rssmikle_frame_height: "400",
+                    frame_height_by_article: "0",
+                    rssmikle_target: "_blank",
+                    rssmikle_font: "Arial, Helvetica, sans-serif",
+                    rssmikle_font_size: "12",
+                    rssmikle_border: "off",
+                    responsive: "off",
+                    rssmikle_css_url: "",
+                    text_align: "left",
+                    text_align2: "left",
+                    corner: "off",
+                    scrollbar: "on",
+                    autoscroll: "off",
+                    scrolldirection: "up",
+                    scrollstep: "3",
+                    mcspeed: "20",
+                    sort: "Off",
+                    rssmikle_title: "on",
+                    rssmikle_title_sentence: "",
+                    rssmikle_title_link: "",
+                    rssmikle_title_bgcolor: "#0066FF",
+                    rssmikle_title_color: "#FFFFFF",
+                    rssmikle_title_bgimage: "",
+                    rssmikle_item_bgcolor: "#FFFFFF",
+                    rssmikle_item_bgimage: "",
+                    rssmikle_item_title_length: "55",
+                    rssmikle_item_title_color: "#0066FF",
+                    rssmikle_item_border_bottom: "on",
+                    rssmikle_item_description: "on",
+                    item_link: "off",
+                    rssmikle_item_description_length: "150",
+                    rssmikle_item_description_color: "#666666",
+                    rssmikle_item_date: "gl1",
+                    rssmikle_timezone: "Etc/GMT",
+                    datetime_format: "%b %e, %Y %l:%M %p",
+                    item_description_style: "text+tn",
+                    item_thumbnail: "full",
+                    item_thumbnail_selection: "auto",
+                    article_num: "15",
+                    rssmikle_item_podcast: "off",
+                    keyword_inc: "",
+                    keyword_exc: ""
+                };
+                feedwind_show_widget_iframe(params);
+            })();</script>
+            <div style="font-size:10px; text-align:center; width:400px;"><a href="http://feed.mikle.com/"
+                                                                            target="_blank" style="color:#CCCCCC;">RSS
+                Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.-->
+            </div><!--  end  feedwind code -->
+        </div>
     </div>
     {#    <br/>#}
     {#            <small>#}
@@ -263,19 +318,56 @@
     {#            </small>#}
     {#    </iframe>#}
 </section>
+<section id="deal-with" class="deal-with">
+    {#    <aside class="call-to-action bg-primary">#}
+    <div class="container">
+        <div class="col-lg-10 col-lg-offset-1 text-center" style="color: white">
+            <h2>Deal with</h2>
+            <hr class="small">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-xs-12 text-center" style="color: white">
+                <p style="color: white">
+                <h3>ในอาคาร</h3>
+                มุดใต้โต๊ะ เก้าอี้ พิงผนังด้านใน แล้วอยู่นิ่งๆ ถ้าไม่มี โต๊ะ ใช้แขนปิดหน้า ปิด
+                ศรีษะ หมอบตรงมุมห้อง อยู่ให้ห่าง กระจก หน้าต่าง และเลี่ยงบริเวณที่
+                สิ่งของหล่นใส่ หรือล้มทับ เช่น โคมไฟ ตู้<br/>
+                ถ้ายังนอนอยู่ ให้อยู่บนเตียง ใช้หมอนปิดบังศรีษะ หลีกเลี่ยงบริเวณที่สิ่งของ
+                หล่นใส่ อยู่บริเวณที่ปลอดภัย
+                <h3>นอกอาคาร</h3>
+                ให้อยู่ด้านนอก ในที่โล่ง อยู่ให้ห่างจากอาคาร เสาไฟ สายไฟฟ้า ต้นไม้ ป้าย
+                โฆษณา หรือสิ่งของที่อาจหล่นใส่
+                </p>
+            </div>
+            <div class="col-lg-6 col-xs-12 text-center" style="color: white">
+                <p style="color: white">
+                <h3>ในรถ</h3>
+                จอดรถเมื่อสามารถจอดได้โดยปลอดภัย และในที่ซึ่งไม่มีของหล่นใส่ อยู่
+                ให้ห่างอาคาร ต้นไม้ ทางด่วน สะพานลอย เชิงเขา เป็นต้น
+                <h3>ติดอยู่ในซากอาคาร</h3>
+                อย่าติดไฟ อยู่อย่างสงบ ใช้ผ้าปิดหน้า เคาะท่อ ฝาผนัง เพื่อเป็นสัญญาณต่อ
+                หน่วยช่วยชีวิต ใช้นกหวีด การตะโกนอาจสูดสิ่งอันตรายเข้าร่างกาย
+                ช่วยเหลือซึ่งกันและกัน และให้ก าลังใจต่อกัน
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    {#    </aside>#}
+</section>
 
 <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h4><strong>Start Bootstrap</strong>
+                <h4><strong>สภาพ</strong>
                 </h4>
-                <p>3481 Melrose Place
-                    <br>Beverly Hills, CA 90210</p>
+                <p>KU
+                    <br>Software and Knowledge Engineering</p>
                 <ul class="list-unstyled">
-                    <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                    <li><i class="fa fa-phone fa-fw"></i>0867850466</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:benjapol@live.com">benjapol@live.com</a>
                     </li>
                 </ul>
                 <br>
@@ -291,7 +383,7 @@
                     </li>
                 </ul>
                 <hr class="small">
-                <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                <p class="text-muted">Copyright &copy; สภาพ Website 2016</p>
             </div>
         </div>
     </div>
@@ -441,7 +533,7 @@
                 'Error: The Geolocation service failed.' :
                 'Error: Your browser doesn\'t support geolocation.');
     }
-    function setMarkers(map, beaches) {
+    function setMarkers(map, beaches, distance) {
         // Adds markers to the map.
 
         // Marker sizes are expressed as a Size of X,Y where the origin of the image
@@ -489,38 +581,36 @@
                 content: contentString
             });
 
-            marker.addListener('click', function () {
-                infowindow.open(map, marker);
-            });
+{#            marker.addListener('click', function () {#}
+{#                infowindow.open(map, marker);#}
+{#            });#}
+            google.maps.event.addListener(marker, 'click', (function (marker, contentString, infowindow) {
+                return function () {
+                    infowindow.setContent(contentString);
+                    infowindow.open(map, marker);
+                };
+            })(marker, contentString, infowindow));
+
+            console.log(beaches);
+            if (distance == 50 && beaches.length != 0) {
+                console.log('innnnnn');
+                for (var i = 0; i < beaches.length; i++) {
+                    console.log(beaches[i]);
+                    notifyMessage(beaches[i]);
+                }
+
+            }
         }
     }
     $('document').ready(function () {
-        // Let's check if the browser supports notifications
-        if (!("Notification" in window)) {
-            alert("This browser does not support desktop notification");
-        }
-
-        // Let's check whether notification permissions have already been granted
-        else if (Notification.permission === "granted") {
-            // If it's okay let's create a notification
-            var notification = new Notification("Hi there!");
-        }
-
-        // Otherwise, we need to ask the user for permission
-        else if (Notification.permission !== 'denied') {
-            Notification.requestPermission(function (permission) {
-                // If the user accepts, let's create a notification
-                if (permission === "granted") {
-                    var notification = new Notification("Hi there!");
-                }
-            });
-        }
+        {#        notifyMessage('Gooooo');#}
 
     });
 
     function getNearByEarthquake(distance, lat, log) {
-        console.log("before summit " + lat + ' ' + log)
         $.ajax({
+            {#            for fake data 'fake_conv' #}
+            {#            real data 'get_lat_lon'#}
             url: "{% url 'home:get_lat_lon' %}",
             type: "GET",
             data: {'distance': distance, 'lat': lat, 'lon': log},
@@ -528,7 +618,7 @@
                 var conv = json.content['conv'];
                 if (json.content['result']) {
                     console.log('Login Sucess!!!');
-                    setMarkers(map, conv);
+                    setMarkers(map, conv, distance);
                 } else {
                     console.log('Login Fail!!!');
                 }
@@ -540,7 +630,7 @@
     }
 
     function addSelection(lat, log) {
-        var distance = 10;
+        var distance = 50;
         $('#sel1').on('change', function () {
             distance = this.value;
             console.log(distance);
@@ -550,12 +640,41 @@
         getNearByEarthquake(distance, lat, log);
     }
 
+    function notifyMessage(message) {
+        // Let's check if the browser supports notifications
+        if (!("Notification" in window)) {
+            alert("This browser does not support desktop notification");
+        }
+
+        // Let's check whether notification permissions have already been granted
+        else if (Notification.permission === "granted") {
+            // If it's okay let's create a notification
+            var options = {
+                body: " " + message[5] + " richter less than 50km",
+                icon: '../static/app/img/danger-512.png'
+            }
+            var notification = new Notification(message[6], options);
+        }
+
+        // Otherwise, we need to ask the user for permission
+        else if (Notification.permission !== 'denied') {
+            Notification.requestPermission(function (permission) {
+                // If the user accepts, let's create a notification
+                if (permission === "granted") {
+                    var notification = new Notification(message);
+                }
+            });
+        }
+    }
+
     function checkNearByEarthQuake() {
-        var notification = window.webkitNotifications.createNotification(
-                'https://cdn1.iconfinder.com/data/icons/toolbar-signs/512/danger-512.png',  // icon url - can be relative
-                'Hello!',  // notification title
-                'Lorem ipsum...'  // notification body text
-        );
+        {#        var notification = window.webkitNotifications.createNotification(#}
+        {#                'https://cdn1.iconfinder.com/data/icons/toolbar-signs/512/danger-512.png',  // icon url - can be relative#}
+        {#                'Hello!',  // notification title#}
+        {#                'Lorem ipsum...'  // notification body text#}
+        {#        );#}
+
+
     }
 
 </script>

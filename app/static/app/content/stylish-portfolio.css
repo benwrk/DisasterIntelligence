@@ -300,3 +300,15 @@ footer {
     transform: scale(1.0);
   }
 }
+.deal-with {
+    margin-top: 100px;
+    background-color: #337ab7;
+}
+@media (max-width: 768px) {
+    .feed-text{
+        display: none;
+    }
+    .deal-with {
+        margin-top: 200px;
+    }
+}
