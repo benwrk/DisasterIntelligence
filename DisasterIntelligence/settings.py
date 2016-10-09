@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'DisasterIntelligence.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-env_db = os.environ.get('Django_DbEngine', 'sqlite')
+#env_db = os.environ.get('Django_DbEngine', 'sqlite')
 
 db_configs = {
     'sqlite': {
@@ -98,7 +98,7 @@ db_configs = {
 }
 
 DATABASES = {
-    'default': db_configs[env_db]
+    'default': db_configs['sqlite']
 }
 
 
