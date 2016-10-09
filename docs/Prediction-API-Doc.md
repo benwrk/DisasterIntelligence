@@ -3,6 +3,7 @@ The DisasterIntelligence Earthquake Guidance Prediction API provides the earthqu
 
 ## Continent Codes ##
 Place any these continent legends in {{Continent}} to obtain data for that continent.
+
 | Legend | Continent |
 |--------|-----------|
 | Af     | Africa    |
@@ -54,6 +55,7 @@ GET /result/{{Countrycode}}_{{Year}}_{{Month}}.CSV
 ```
 Where year is in the range of the present year to the next ten years (e.g. 2016-2026), and month is in the range of 1 to 12, and countrycode is one of the following:
 ### Countrycodes ###
+
 | Countrycode | Country |
 |-----|-------------|
 | 0   | Afghanistan |
@@ -253,6 +255,7 @@ There are many kind of ready-for-use graphs available in the API.
 
 ### Graphcodes ###
 Listed here is the list of available graphs, and their graphcodes.
+
 | Graphcode | Graph |
 |------------|-------|
 | 2 | Magnitude Range Pie Chart |
@@ -288,6 +291,7 @@ GET /C{{FromYear}}_{{ToYear}}
 ```
 
 Where FromYear and ToYear can be one of the following pairs:
+
 | FromYear | ToYear |
 |----------|--------|
 | 1900 | 1910 |
@@ -317,6 +321,7 @@ We also have the ready-for-use map of depths grouped by range of magnitude, to q
 GET /C{{FromMagnitude}}_{{ToMagnitude}}
 ```
 Where FromMagnitude and ToMagnitude is one of the following pairs:
+
 | FromMagnitude | ToMagnitude |
 |---------------|-------------|
 | 4 | 5 |
