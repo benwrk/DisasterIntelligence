@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da75d9a8-44fa-471d-b501-7b7ede6b63e8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/app/img/Group1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/app/img/Group2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/app/img/Group3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/app/img/Group4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/app/img/danger-512.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/app/img/Overview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/app/img/portfolio-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/DisasterIntelligence.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DisasterIntelligence/.idea/DisasterIntelligence.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/app/content/stylish-portfolio.css" afterPath="$PROJECT_DIR$/app/static/app/content/stylish-portfolio.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/app/index.html" afterPath="$PROJECT_DIR$/app/templates/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/urls.py" afterPath="$PROJECT_DIR$/app/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views.py" afterPath="$PROJECT_DIR$/app/views.py" />
     </list>
     <ignored path="DisasterIntelligence.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/templates/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="589" column="39" selection-start-line="589" selection-start-column="39" selection-end-line="589" selection-end-column="39" />
+            <state relative-caret-position="270">
+              <caret line="114" column="50" selection-start-line="114" selection-start-column="50" selection-end-line="114" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -632,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="589" column="39" selection-start-line="589" selection-start-column="39" selection-end-line="589" selection-end-column="39" />
+        <state relative-caret-position="270">
+          <caret line="114" column="50" selection-start-line="114" selection-start-column="50" selection-end-line="114" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
