@@ -246,3 +246,4 @@ ModelManifest.xml
 
 env/
 *.pyc
+*.sqlite*
